@@ -42,11 +42,11 @@
         </el-select>
       </el-form-item>
 
-      <el-form-item label="商品描述" prop="description">
+      <el-form-item label="商品de描述" prop="description">
         <el-input v-model="form.description" type="textarea" :rows="4"/>
       </el-form-item>
 
-      <el-form-item label="商品介绍">
+      <!-- <el-form-item label="商品介绍">
       </el-form-item>
 
       <QuillEditor
@@ -66,7 +66,7 @@
           toolbar="full"
           theme="snow"
           style="height:200px"
-      />
+      /> -->
 
 
     </el-form>
@@ -117,8 +117,8 @@ const form=ref({
     id:''
   },
   description:'',
-  productIntroImgs:'',
-  productParaImgs:''
+  // productIntroImgs:'',
+  // productParaImgs:''
 })
 
 const bigTypeId=ref("")

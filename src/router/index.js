@@ -23,11 +23,11 @@ const routes = [
         name: '商品管理',
         component: () => import('../views/product/index')
       },
-      {
-        path: '/smallType',
-        name: '商品小类',
-        component: () => import('../views/smallType/index')
-      },
+      // {
+      //   path: '/smallType',
+      //   name: '商品小类',
+      //   component: () => import('../views/smallType/index')
+      // },
       {
         path: '/user',
         name: '用户管理',

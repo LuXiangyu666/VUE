@@ -16,7 +16,7 @@
       </el-table-column>
       <el-table-column prop="price" label="商品价格" width="100" />
       <el-table-column prop="stock" label="商品库存" width="100" />
-      <el-table-column prop="type" label="商品类别" width="200" :formatter="typeNameFormatter"/>
+      <!-- <el-table-column prop="typeId" label="商品类别" width="200" :formatter="typeNameFormatter"/> -->
       <el-table-column prop="hot" label="热卖?" width="100" align="center">
         <template v-slot="{row}">
           <el-switch v-model="row.hot" @change="hotChangeHandle(row)"></el-switch>
@@ -151,7 +151,7 @@ const handleCurrentChange=(pageNum)=>{
 }
 
 const typeNameFormatter=(row)=>{
-  return row.type.name;
+  return row.typeId.name;
 }
 
 const handleDelete=(id,status)=>{
@@ -200,6 +200,7 @@ const hotChangeHandle=async (row)=>{
     initProductList();
   }
 }
+
 
 const swiperChangeHandle=async (row)=>{
   let res=await axios.get("admin/product/updateSwiper/"+row.id+"/state/"+row.swiper);
