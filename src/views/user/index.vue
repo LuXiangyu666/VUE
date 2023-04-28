@@ -11,7 +11,7 @@
       <el-table-column prop="nickName" label="用户昵称" width="200" />
       <el-table-column prop="avatarUrl" label="头像" width="200">
           <template v-slot="scope">
-            <img :src="scope.row.avatarUrl" width="50" height="50">
+            <!-- <img :src="scope.row.avatarUrl" width="50" height="50"> -->
           </template>
       </el-table-column>
       <el-table-column prop="openid" label="openID" />

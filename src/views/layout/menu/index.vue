@@ -17,12 +17,12 @@
       <span>用户管理</span>
     </el-menu-item>
 
-    <el-menu-item index="bigType">
+    <!-- <el-menu-item index="bigType">
       <el-icon><management /></el-icon>
       <span>商品大类管理</span>
-    </el-menu-item>
+    </el-menu-item> -->
 
-    <!-- <el-sub-menu index="3">
+    <el-sub-menu index="3">
       <template #title >
         <el-icon><management /></el-icon>
         <span>商品类别管理</span>
@@ -35,7 +35,7 @@
         <el-icon><management /></el-icon>
         <span>商品小类管理</span>
       </el-menu-item>
-    </el-sub-menu> -->
+    </el-sub-menu>
 
     <el-menu-item index="product">
       <el-icon><tickets /></el-icon>

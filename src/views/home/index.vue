@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    欢迎使用，Java1234微信小程序商城后台管理
+    欢迎使用，校园二手交易小程序后台管理系统
   </div>
 
 </template>
