@@ -42,6 +42,11 @@
       <span>商品管理</span>
     </el-menu-item>
 
+    <el-menu-item index="process">
+      <el-icon><tickets /></el-icon>
+      <span>商品审核</span>
+    </el-menu-item>
+
     <el-menu-item index="order">
       <el-icon><tickets /></el-icon>
       <span>订单管理</span>

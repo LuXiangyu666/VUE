@@ -46,29 +46,6 @@
         <el-input v-model="form.description" type="textarea" :rows="4"/>
       </el-form-item>
 
-      <!-- <el-form-item label="商品介绍">
-      </el-form-item>
-
-      <QuillEditor
-          v-model:content="form.productIntroImgs"
-          contentType="html"
-          toolbar="full"
-          theme="snow"
-          style="height:200px"
-      />
-
-      <el-form-item label="商品参数">
-      </el-form-item>
-
-      <QuillEditor
-          v-model:content="form.productParaImgs"
-          contentType="html"
-          toolbar="full"
-          theme="snow"
-          style="height:200px"
-      /> -->
-
-
     </el-form>
     <template #footer>
       <span class="dialog-footer">
@@ -117,8 +94,6 @@ const form=ref({
     id:''
   },
   description:'',
-  // productIntroImgs:'',
-  // productParaImgs:''
 })
 
 const bigTypeId=ref("")

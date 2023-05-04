@@ -23,6 +23,14 @@ const routes = [
         name: '商品管理',
         component: () => import('../views/product/index')
       },
+
+      {
+        path: '/process',
+        name: '商品审核',
+        component: () => import('../views/process/index')
+      },
+
+
       {
         path: '/smallType',
         name: '商品小类',

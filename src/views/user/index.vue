@@ -8,11 +8,11 @@
     </el-row>
     <el-table :data="tableData" stripe style="width: 100%">
       <el-table-column prop="id" label="#ID" width="80" />
-      <el-table-column prop="nickName" label="用户昵称" width="200" />
-      <el-table-column prop="avatarUrl" label="头像" width="200">
-          <template v-slot="scope">
-            <!-- <img :src="scope.row.avatarUrl" width="50" height="50"> -->
-          </template>
+      <el-table-column prop="nickName" label="用户昵称" width="100" />
+      <el-table-column prop="wxuserImg" label="用户头像" width="200" align="center">
+        <template v-slot="scope">
+          <img :src="getServerUrl()+'/image/wxuserImg/'+scope.row.wxuserImg" width="60" height="60"/>
+        </template>
       </el-table-column>
       <el-table-column prop="openid" label="openID" />
       <el-table-column prop="registerDate" label="注册日期" width="200"/>
@@ -33,7 +33,7 @@
 <script setup>
 import { Search } from '@element-plus/icons-vue'
 import { ref } from 'vue'
-import axios from "@/util/axios";
+import axios,{ getServerUrl } from "@/util/axios";
 
 const queryForm=ref({
   query:'',
