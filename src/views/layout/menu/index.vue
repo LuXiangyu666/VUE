@@ -52,6 +52,11 @@
       <span>订单管理</span>
     </el-menu-item>
 
+    <el-menu-item index="complaint">
+      <el-icon><tickets /></el-icon>
+      <span>投诉管理</span>
+    </el-menu-item>
+
     <el-sub-menu index="11">
       <template #title >
         <el-icon><management /></el-icon>

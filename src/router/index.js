@@ -29,6 +29,11 @@ const routes = [
         name: '商品审核',
         component: () => import('../views/process/index')
       },
+      {
+        path: '/complaint',
+        name: '投诉审核',
+        component: () => import('../views/complaint/index')
+      },
 
 
       {

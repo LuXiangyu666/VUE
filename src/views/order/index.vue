@@ -20,8 +20,8 @@
       <el-table-column prop="action" label="操作" width="300" fixed="right">
         <template v-slot="scope">
           <el-button type="success" @click="handleDialogValue(scope.row.id)">详情</el-button>
-          <el-button type="primary" @click="handleOrderStatus(scope.row.id,2)">发货</el-button>
-          <el-button type="primary" @click="handleOrderStatus(scope.row.id,3)">退货</el-button>
+          <el-button type="primary" @click="handleOrderStatus(scope.row.id,3)">发货</el-button>
+          <el-button type="primary" @click="handleOrderStatus(scope.row.id,4)">退货</el-button>
           <el-button type="danger" :icon="Delete" @click="handleDelete(scope.row.id)"/>
         </template>
       </el-table-column>
@@ -90,12 +90,12 @@ const wxUserInfoNickNameFormatter=(row)=>{
 
 const statusFormatter=(row)=>{
   switch (row.status){
-    case 1:
-      return "待支付"
     case 2:
       return "待发货"
     case 3:
-      return "退款/退货"
+      return "待收货"
+    case 4:
+      return "退货"
   }
 }
 
